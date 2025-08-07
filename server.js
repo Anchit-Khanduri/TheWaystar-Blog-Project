@@ -6,7 +6,7 @@ const cookieParser = require("cookie-parser");
 const {checkForAuthenticationCookie } = require("./middleware/userAuthentication");
 const userRouter = require("./routes/userRouter");
 const PORT = process.env.PORT || 3000;
-const MONGO_URI = "mongodb://localhost:27017/thewaystar-blog-project";
+const MONGO_URI = "mongodb+srv://elliottyler2023:mongoDatabase@cluster0.3kdlojn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose.connect(MONGO_URI)
     .then(()=>{
