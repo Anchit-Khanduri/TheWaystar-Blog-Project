@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thewaystar</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/blog.css">
+</head>
+
+<body>
+
+  <nav id="navbar">
+  <div id="main-header">
+    <h1>[The Waystar]</h1>
+  </div>
+  <div id="navs">
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/create-blog">Create</a></li>
+      <li><a href="/myaccount">Account</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!--  Navbar Finished -->
+
+
+<!-- Blog Area -->
+
+    <div id="createBlog">
+
+        <h1>Create Blog Here -></h1>
+
+        <form action="/create-blog" method="POST">
+
+            <div id="blog-data">
+                <label for="blogName">Title: </label>
+                <input type="text" name="blogName" id="blogName" placeholder="Enter title...." required>
+            </div>
+
+            <div id="blog-data">
+                <label for="blogDescription">Description: </label>
+                <input type="text" name="blogDescription" id="blogDescription" placeholder="Enter your thoughts...." required>
+            </div>
+
+            <button type="submit">Post</button>
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

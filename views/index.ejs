@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thewaystar</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+
+   <div id="main-header">
+
+        <h1>[The Waystar]</h1>
+
+    <!-- Navbar Done -->
+     </div>
+
+
+    <!-- Registration form -->
+
+    <div id="registrationForm">
+
+        <div id="reg-area">
+
+        <form action="/register" method="POST">
+
+
+        <div id="userRegister">
+            <div id="form-group">
+                <label for="username">Fullname:</label>
+                <input type="text" name="username" placeholder="Enter your name.... " required id="username"/>
+                </div>
+
+                <div id="form-group">
+                <label for="useremail">Email:</label>
+                <input type="email" name="useremail" placeholder="Enter your email.... " required id="useremail"/>
+                </div>
+
+                <div id="form-group">
+                <label for="userpassword">Password:</label>
+                <input type="password" name="userpassword" placeholder="Enter your password.... " required id="userpassword" />
+                </div>
+
+                <div id="form-group">
+                <label for="userDOB">Date of Birth:</label>
+                <input type="date" name="userDOB" id="userDOB" required />
+                </div>
+                
+        </div>
+
+            <button type="submit">Register</button>
+
+         </form>
+        </div>
+        <a href="/login"><button id="btnLogin">Login</button></a>
+    </div>
+
+
+</body>
+</html>

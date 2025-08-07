@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thewaystar</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<style>
+
+#btnDelete{
+  background-color: red;
+  padding: 0.5em 2em;
+  color: white;
+  border: none;
+  margin: 10px 10px;
+  border-radius: 10px;
+}
+
+
+
+/* User info */
+.user-info {
+  max-width: 500px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.user-info img {
+  width: 250px;
+  height: 250px;
+  object-fit:contain;
+  margin-bottom: 15px;
+}
+
+.user-info p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .user-info {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+</style>
+<body>
+  <nav id="navbar">
+  <div id="main-header">
+    <h1>[The Waystar]</h1>
+  </div>
+  <div id="navs">
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/create-blog">Create</a></li>
+      <li><a href="/myaccount">Account</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!--  Navbar Finished -->
+
+
+<!-- User Data -->
+<div class="user-info">
+  <p>Name: <%= user.username %></p>
+  <p>Email: <%= user.useremail %></p>
+  <p>Date of Birth: <%= user.userDOB %></p>
+
+  <a href="/myBlogs/<%= user._id %>">My Blogs</a>
+  <br>
+  <a href="/logout">Logout</a>
+
+  <form action="/myaccount/<%= user._id %>" method="POST">
+    <button id="btnDelete" type="submit">Delete Account</button>
+  </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/navbar.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+/* Container */
+#registrationForm {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group */
+#form-group {
+    margin-bottom:1em;
+}
+
+#form-group label {
+    display: block;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+#form-group input,
+#role {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Submit Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #18599b;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnLogin{
+  width: 100%;
+  margin-top: 1em;
+  background-color: #1a1a2e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+#btnRegister{
+  width: 100%;
+  margin-top: 1em;
+  background-color: #26264e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+/* Login form */
+#loginArea {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+#logArea {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+#login-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#login-form button {
+  width: 100%;
+  background-color: #1a1a2e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #registrationForm {
+        padding: 20px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
+
